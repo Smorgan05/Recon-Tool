@@ -11,3 +11,9 @@
 ### Active Recon
 * Http Enum
 * Nikto
+
+### Change Log
+* Add Arguments such as:
+* Recon.sh -Passive
+* Recon.sh -Active
+* Recon.sh -All
