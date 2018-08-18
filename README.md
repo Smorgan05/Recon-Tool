@@ -3,9 +3,9 @@
 # PreCondition
 * Website (ie google.com) says HTTP/1.1 200 OK
 
-# Passive-Recon.sh
+# Passive Recon
 * Wayback Machine
 
-# Active-Recon.sh
+# Active Recon
 * Http Enum
 * Nikto
