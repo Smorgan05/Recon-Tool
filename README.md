@@ -5,6 +5,8 @@
 
 # Passive Recon
 * Wayback Machine
+* Idea: Google Dorking
+* Idea: WhoIS Information
 
 # Active Recon
 * Http Enum
