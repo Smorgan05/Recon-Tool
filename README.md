@@ -10,10 +10,13 @@
 * TheHarvester
 
 ### Active Recon
-* Http Enum
 * Nikto
 * nmap enum
 * Robots.txt
+
+### Manual Recon
+* ViewDNS.info
+* Pipl
 
 ### Change Log
 * Add Arguments such as:
