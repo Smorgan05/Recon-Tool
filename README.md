@@ -4,13 +4,16 @@
 * Website (ie google.com) says HTTP/1.1 200 OK
 
 ### Passive Recon
-* Wayback Machine
-* Idea: Google Dorking
-* Idea: WhoIS Information
+* Whois
+* NSlookup
+* Wayback Enum
+* TheHarvester
 
 ### Active Recon
 * Http Enum
 * Nikto
+* nmap enum
+* Robots.txt
 
 ### Change Log
 * Add Arguments such as:
