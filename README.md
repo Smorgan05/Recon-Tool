@@ -17,6 +17,7 @@
 ### Manual Recon
 * ViewDNS.info
 * Pipl
+* Netcraft
 
 ### Change Log
 * Add Arguments such as:
