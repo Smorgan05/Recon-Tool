@@ -1,5 +1,7 @@
 # Recon-Tool
 
+Depending on code complexity this project may get ported to python.  At this point the game plan is to make a list of tools and see what works and go from there.
+
 ### PreCondition
 * Website (ie google.com) says HTTP/1.1 200 OK
 
