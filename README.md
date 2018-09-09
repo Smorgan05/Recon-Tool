@@ -15,10 +15,11 @@
 * Robots.txt
 
 ### Manual Recon
-* ViewDNS.info
-* Pipl
-* Netcraft
-* Maltego
+* ViewDNS.info (website)
+* Pipl (website)
+* Netcraft (website)
+* Maltego (all-in-one)
+* Sn1per (all-in-one)
 
 ### Change Log
 * Add Arguments such as:
