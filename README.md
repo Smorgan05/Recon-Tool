@@ -18,6 +18,7 @@
 * ViewDNS.info
 * Pipl
 * Netcraft
+* Maltego
 
 ### Change Log
 * Add Arguments such as:
