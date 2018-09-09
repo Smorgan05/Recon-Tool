@@ -2,6 +2,11 @@
 
 Depending on code complexity this project may get ported to python.  At this point the game plan is to make a list of tools and see what works and go from there.
 
+### File List
+* Recon.sh
+* URLChecker.sh - Checks for valid URLs when given text file with list of URLs (this will get merged into Recon)
+* Recon Logic.vsdx - Planning diagram to keep track of logic
+
 ### PreCondition
 * Website (ie google.com) says HTTP/1.1 200 OK
 
