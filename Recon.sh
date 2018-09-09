@@ -1,4 +1,4 @@
-#!/bin/bashs
+#!/usr/bin/env bash
 
 # Define Path
 Path="/root/Desktop/"$2
