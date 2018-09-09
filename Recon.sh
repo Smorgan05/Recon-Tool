@@ -27,8 +27,13 @@ NSlookup (){
 # Wayback of Domain
 WayBack (){
 	FileName=$2"WayBack.txt"
-	printf -v Command 'use auxiliary/scanner/http/enum_wayback; \nset domain '$1'; \nset outfile '$FileName'; \nrun; \nexit'
-	msfconsole -x "$Command" | sed -n '28!p' > $FileName
+	printf -v Command 'use auxiliary/scanner/http/enum_wayback; \nset domain '$1'; \nrun; \nexit'
+	$Result=$(msfconsole -x "$Command")
+	Filter=$(echo "$Test" | sed 1,28d)
+	echo "$Filter" > $FileName
+
+	#Test=$(echo "${Filter:112:19}") # Get the Located Portion
+	# if [ "$Test"!="Located 0 addresses" ];	
 }
 
 # Harvest the Emails
@@ -43,10 +48,10 @@ URLTest () {
 	if [ "$result"=="HTTP/1.1 200 OK" ];
 	then
 		echo "Website is working"
-		Whois $1 $2
-		NSlookup $1 $2
+		#Whois $1 $2
+		#NSlookup $1 $2
 		WayBack $1 $2
-		TheHarvester $1 $2
+		#TheHarvester $1 $2
 	else
 		echo "Website is dead"
 	fi
