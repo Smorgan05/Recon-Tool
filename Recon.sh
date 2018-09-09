@@ -1,40 +1,57 @@
-#!/usr/bin/env sh
+#!/bin/bashs
 
-# Declare Functions
+# Define Path
+Path="/root/Desktop/"$2
 
-HttpEnum (){
-	FileName = "$2 HttpEnum.txt"
-	nmap –script http-enum $1 > $FileName
+# Make the Directory
+if [ ! -d $Path ]
+then
+	mkdir $Path
+fi
+
+# Switch to that Directory
+cd $Path
+
+# Whois Domain lookup
+Whois (){
+	FileName=$2"Whois.txt"
+	whois $1 > $FileName
 }
 
-
-Wayback () {
-	$FileName = "$2 Wayback.txt"
-	$Command = "use auxiliary/scanner/http/enum_wayback;\
-	set domain $1;\
-	set outfile root\Desktop\'FileName';\
-	run"
-	msfconsole -x $Command > $FileName
-}
-	
-NiktoFind () {
-	$FileName = "$2 Nikto.txt"
-	nikto -h $1 > $FileName
+# NSLookup of Domain
+NSlookup (){
+	FileName=$2"NSLookup.txt"
+	nslookup $1 > $FileName
 }
 
-# Test URL
+# Wayback of Domain
+WayBack (){
+	FileName=$2"WayBack.txt"
+	printf -v Command 'use auxiliary/scanner/http/enum_wayback; \nset domain '$1'; \nset outfile '$FileName'; \nrun; \nexit'
+	msfconsole -x "$Command" | sed -n '28!p' > $FileName
+}
+
+# Harvest the Emails
+TheHarvester (){
+	FileName=$2"Harvester"
+	theharvester -d $1 -l 500 -b google > $FileName
+}
+
+# Main Function
 URLTest () {
-	$result = curl -Is $1 | head -n 1
-	if [$result -eq "HTTP/1.1 200 OK"]
+	result=$(curl -Is $1 | head -n 1)
+	if [ "$result"=="HTTP/1.1 200 OK" ];
 	then
-		HttpEnum $1 $2
-		Wayback $1 $2
-		NiktoFind $1 $2
-		func4 $1 $2 # Robots / Sitemap
+		echo "Website is working"
+		Whois $1 $2
+		NSlookup $1 $2
+		WayBack $1 $2
+		TheHarvester $1 $2
 	else
-		echo "$1 - Website is not responding!"
+		echo "Website is dead"
 	fi
 }
 
-# URLTest $1 $2
 # URLTest Website CodeName
+URLTest $1 $2
+
