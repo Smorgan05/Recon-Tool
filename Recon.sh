@@ -27,6 +27,7 @@ NSlookup (){
 # Wayback of Domain
 WayBack (){
 
+	# URL Checker Function
 	URLChecker (){
 	while read -r LINE; do
 		read -r REP < <(exec curl -IsS "$LINE" 2>&1)
@@ -38,7 +39,7 @@ WayBack (){
 	printf -v Command 'use auxiliary/scanner/http/enum_wayback; \nset domain '$1'; \nrun; \nexit'
 	Result=$(msfconsole -x "$Command")
 	Filter=$(echo "$Result" | sed -n -e '/domain/,$p') # Cut everything after "domain"
-	Test=$(echo "$Filter" | sed -n 2p) # Get the Located Portion line
+	Test=$(echo "$Filter" | sed -n 3p) # Get the Located Portion line
 	if [ $Test != *"Located 0"* ];
 	then
 		Store=$(echo "$Filter" | sed 1,4d) #Get the URL List
