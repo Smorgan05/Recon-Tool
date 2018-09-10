@@ -30,7 +30,7 @@ WayBack (){
 	URLChecker (){
 	while read -r LINE; do
 		read -r REP < <(exec curl -IsS "$LINE" 2>&1)
-		echo "$LINE: $REP"
+		echo "$LINE: $REP" # Need to Remove unresponsive Links
 	done <<< "$list"
 	}
 
@@ -39,6 +39,7 @@ WayBack (){
 	$Result=$(msfconsole -x "$Command")
 	Filter=$(echo "$Result" | sed 1,28d)
 
+	# We need to switch this to a multiline string array
 	Test=$(echo "${Filter:112:19}") # Get the Located Portion
 	if [ "$Test" != "Located 0 addresses" ];
 	then
