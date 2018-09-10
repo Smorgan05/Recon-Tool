@@ -26,14 +26,28 @@ NSlookup (){
 
 # Wayback of Domain
 WayBack (){
+
+	URLChecker (){
+	while read -r LINE; do
+		read -r REP < <(exec curl -IsS "$LINE" 2>&1)
+		echo "$LINE: $REP"
+	done <<< "$list"
+	}
+
 	FileName=$2"WayBack.txt"
 	printf -v Command 'use auxiliary/scanner/http/enum_wayback; \nset domain '$1'; \nrun; \nexit'
 	$Result=$(msfconsole -x "$Command")
-	Filter=$(echo "$Test" | sed 1,28d)
-	echo "$Filter" > $FileName
+	Filter=$(echo "$Result" | sed 1,28d)
 
-	#Test=$(echo "${Filter:112:19}") # Get the Located Portion
-	# if [ "$Test"!="Located 0 addresses" ];	
+	Test=$(echo "${Filter:112:19}") # Get the Located Portion
+	if [ "$Test" != "Located 0 addresses" ];
+	then
+		Store=$(echo "$Filter" | sed 1,4d) #Get the URL List
+		Return=$(URLChecker $Store)#Parse List to get Active URLs
+		echo "$Return" > $FileName
+	else
+		echo "Archive is Empty." #List is Empty
+	fi
 }
 
 # Harvest the Emails
@@ -48,10 +62,10 @@ URLTest () {
 	if [ "$result"=="HTTP/1.1 200 OK" ];
 	then
 		echo "Website is working"
-		#Whois $1 $2
-		#NSlookup $1 $2
+		Whois $1 $2
+		NSlookup $1 $2
 		WayBack $1 $2
-		#TheHarvester $1 $2
+		TheHarvester $1 $2
 	else
 		echo "Website is dead"
 	fi
