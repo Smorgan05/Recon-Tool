@@ -15,11 +15,13 @@ Depending on code complexity this project may get ported to python.  At this poi
 * NSlookup
 * Wayback Enum
 * TheHarvester
+* Google Dorking
 
 ### Active Recon
 * Nikto
 * nmap enum
 * Robots.txt
+* dirb
 * Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc)
 
 ### Manual Recon
