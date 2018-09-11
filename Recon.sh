@@ -42,8 +42,8 @@ WayBack (){
 	Test=$(echo "$Filter" | sed -n 3p) # Get the Located Portion line
 	if [ $Test != *"Located 0"* ];
 	then
-		Store=$(echo "$Filter" | sed 1,4d) #Get the URL List
-		Return=$(URLChecker $Store)#Parse List to get Active URLs
+		Store=$(echo "$Filter" | sed 1,3d | head -n -2) #Get the URL List
+		Return=$(URLChecker $Store)#Parse List to get Active URLs (needs work)
 		echo "$Return" > $FileName
 	else
 		echo "Archive is Empty." #List is Empty
