@@ -24,6 +24,10 @@ Depending on code complexity this project may get ported to python.  At this poi
 * dirb
 * Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc)
 
+### Exploitation
+* sploitus.com
+* Burpsuite
+
 ### Manual Recon
 * ViewDNS.info (website)
 * Pipl (website)
