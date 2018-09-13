@@ -28,7 +28,7 @@ Depending on code complexity this project may get ported to python.  At this poi
 
 ### Active Recon
 * Nikto
-* nmap enum
+* nmap (http-enum, etc)
 * Robots.txt
 * dirb
 * Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc)
