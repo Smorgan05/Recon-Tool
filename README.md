@@ -7,7 +7,7 @@ Depending on code complexity this project may get ported to python.  At this poi
 * IP Address: 192.168.11.1 (NSLookup Info)
 * Operating System: Windows / Linux
 * Server Host Software: IIS / Apache / Tomcat
-* Server Software: IBM WebSphere, Adobe, ASP, etc
+* Server Software: IBM WebSphere, Adobe, ASP, etc (nmap -sV hostname?)
 * Port List:
 * Wayback Enum:
 
@@ -45,6 +45,7 @@ Depending on code complexity this project may get ported to python.  At this poi
 * Sn1per (all-in-one)
 * Google Analytics ID (Just to find what other sites are using the same ID)
 * WAppalyzer
+* pentest-tools.com (website)
 
 ### Change Log
 * Add Arguments such as:
