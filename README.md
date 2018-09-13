@@ -2,6 +2,15 @@
 
 Depending on code complexity this project may get ported to python.  At this point the game plan is to make a list of tools and see what works and go from there.
 
+### Profile:
+* Domain: Example.com
+* IP Address: 192.168.11.1 (NSLookup Info)
+* Operating System: Windows / Linux
+* Server Host Software: IIS / Apache / Tomcat
+* Server Software: IBM WebSphere, Adobe, ASP, etc
+* Port List:
+* Wayback Enum:
+
 ### File List
 * Recon.sh
 * URLChecker.sh - Checks for valid URLs when given text file with list of URLs (this will get merged into Recon)
