@@ -47,6 +47,8 @@ WayBack (){
 	if [ $Test != *"Located 0"* ];
 	then
 		Store=$(echo "$Filter" | sed 1,3d | head -n -2) #Get the URL List
+		
+		# We could use mulitple servers to make this go faster
 		Return=$(echo "$Store" | parallel -j10 -k URLChecker) # Need to test this (where j is number of parallel URL Checkers)
 		Return=$(URLChecker $Store)#Parse List to get Active URLs (needs work)
 		echo "$Return" > $FileName
