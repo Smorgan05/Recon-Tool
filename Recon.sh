@@ -28,6 +28,8 @@ NSlookup (){
 WayBack (){
 
 	# URL Checker Function
+	# This needs to be switched over to a parallel execution
+	# How many curls can we execute at once without choking the network?
 	URLChecker (){
 	while read -r LINE; do
 		read -r REP < <(exec curl -IsS "$LINE" 2>&1)
