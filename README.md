@@ -42,12 +42,12 @@ Depending on code complexity this project may get ported to python.  At this poi
 * ViewDNS.info (website)
 * Pipl (website)
 * Netcraft (website)
-* Maltego (all-in-one)
+* Maltego (all-in-one) - site Mapping
+* Skipfish - site Mapping
 * Sn1per (all-in-one)
 * Google Analytics ID (Just to find what other sites are using the same ID)
 * WAppalyzer
 * pentest-tools.com (website)
-* Skipfish
 
 ### Change Log
 * Add Arguments such as:
