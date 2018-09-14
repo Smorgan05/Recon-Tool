@@ -47,6 +47,7 @@ Depending on code complexity this project may get ported to python.  At this poi
 * Google Analytics ID (Just to find what other sites are using the same ID)
 * WAppalyzer
 * pentest-tools.com (website)
+* Skipfish
 
 ### Change Log
 * Add Arguments such as:
