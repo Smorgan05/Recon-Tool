@@ -33,9 +33,11 @@ WayBack (){
 	URLChecker (){
 	while read -r LINE; do
 		read -r REP < <(exec curl -IsS "$LINE" 2>&1)
-		echo "$LINE: $REP" # Need to Remove unresponsive Links
-	done <<< "$list"
+		echo "$LINE: $REP" # Keep all items (may be useful)
+	#done <<< "$list"
+	done <<< "$1"
 	}
+	export -f URLChecker
 
 	FileName=$2"WayBack.txt"
 	printf -v Command 'use auxiliary/scanner/http/enum_wayback; \nset domain '$1'; \nrun; \nexit'
@@ -45,6 +47,7 @@ WayBack (){
 	if [ $Test != *"Located 0"* ];
 	then
 		Store=$(echo "$Filter" | sed 1,3d | head -n -2) #Get the URL List
+		Return=$(echo "$Store" | parallel -j10 -k URLChecker) # Need to test this (where j is number of parallel URL Checkers)
 		Return=$(URLChecker $Store)#Parse List to get Active URLs (needs work)
 		echo "$Return" > $FileName
 	else
