@@ -9,6 +9,7 @@ Depending on code complexity this project may get ported to python.  At this poi
 * Server Host Software: IIS / Apache / Tomcat
 * Server Software: IBM WebSphere, Adobe, ASP, etc (nmap -sV hostname?)
 * Port List:
+* Target Website Map:
 * Wayback Enum:
 
 ### File List
