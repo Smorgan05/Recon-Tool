@@ -17,7 +17,7 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * Wayback Enum:
 
 ### Passive Recon
-**Website (ie google.com) says HTTP/1.1 200 OK** - PreCondition
+* **Website (ie google.com) says HTTP/1.1 200 OK** - PreCondition
 * Whois
 * NSlookup
 * Wayback Enum
