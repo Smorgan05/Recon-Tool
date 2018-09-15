@@ -63,7 +63,7 @@ TheHarvester (){
 	theharvester -d $1 -l 500 -b google > $FileName
 }
 
-# Main Function
+# Main Function (Ash Nazg / The One Ring)
 URLTest () {
 	result=$(curl -Is $1 | head -n 1)
 	if [ "$result"=="HTTP/1.1 200 OK" ];
