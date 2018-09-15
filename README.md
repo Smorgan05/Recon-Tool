@@ -36,7 +36,7 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon** --> **
 * maltego
 * skipfish
 
-### Active Recon
+### Site Mapping
 * Nikto
 * nmap (http-enum, etc)
 * Robots.txt
