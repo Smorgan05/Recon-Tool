@@ -1,8 +1,10 @@
-# Recon-Tool
+# Recon-Tool - Ash Nazg
+
+Recon-Tool - Basic goal is to create a Penetratoin testing / Recon Framework so that the vulnerability scanning on a target is better and more effiecent.  Also I'm tired of running the same commands over and over again.
 
 Depending on code complexity this project may get ported to python.  At this point the game plan is to make a list of tools and see what works and go from there.
 
-Order of Ops: **Passive Recon** --> **Web Crawler** --> **Active Recon** --> **Exploitation**
+Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> **Manual**--> **Exploitation**
 
 ### Profile:
 * Domain: Example.com
@@ -14,15 +16,8 @@ Order of Ops: **Passive Recon** --> **Web Crawler** --> **Active Recon** --> **E
 * Target Website Map (crawler):
 * Wayback Enum:
 
-### File List
-* Recon.sh
-* URLChecker.sh - Checks for valid URLs when given text file with list of URLs (this will get merged into Recon)
-* Recon Logic.vsdx - Planning diagram to keep track of logic
-
-### PreCondition
-* Website (ie google.com) says HTTP/1.1 200 OK
-
 ### Passive Recon
+**Website (ie google.com) says HTTP/1.1 200 OK** - PreCondition
 * Whois
 * NSlookup
 * Wayback Enum
@@ -34,16 +29,12 @@ Order of Ops: **Passive Recon** --> **Web Crawler** --> **Active Recon** --> **E
 * maltego
 * skipfish
 
-### Active Recon
+### Site Mapping
 * Nikto
 * nmap (http-enum, etc)
 * Robots.txt
 * dirb
 * Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc): Wappalyzer
-
-### Exploitation
-* sploitus.com (based on webservice)
-* Burpsuite
 
 ### Manual Recon
 * ViewDNS.info (website)
@@ -54,7 +45,11 @@ Order of Ops: **Passive Recon** --> **Web Crawler** --> **Active Recon** --> **E
 * WAppalyzer
 * pentest-tools.com (website)
 
-### Change Log
+### Exploitation
+* sploitus.com (based on webservice)
+* Burpsuite
+
+## Change Log
 * Add Arguments such as:
 * Recon.sh -Passive
 * Recon.sh -Active
