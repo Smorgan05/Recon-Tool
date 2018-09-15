@@ -56,7 +56,7 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * WAppalyzer
 * pentest-tools.com (website)
 
-### Change Log
+## Change Log
 * Add Arguments such as:
 * Recon.sh -Passive
 * Recon.sh -Active
