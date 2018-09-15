@@ -1,4 +1,4 @@
-# Recon-Tool - The One Ring (Ash nazg)
+# Recon-Tool - Ash Nazg
 
 Recon-Tool - Basic goal is to create a Penetratoin testing / Recon Framework so that the vulnerability scanning on a target is better and more effiecent.  Also I'm tired of running the same commands over and over again.
 
