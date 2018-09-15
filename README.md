@@ -9,7 +9,7 @@ Depending on code complexity this project may get ported to python.  At this poi
 * Server Host Software: IIS / Apache / Tomcat
 * Server Software: IBM WebSphere, Adobe, ASP, etc (nmap -sV hostname?)
 * Port List:
-* Target Website Map:
+* Target Website Map (crawler):
 * Wayback Enum:
 
 ### File List
@@ -27,23 +27,26 @@ Depending on code complexity this project may get ported to python.  At this poi
 * TheHarvester
 * Google Dorking
 
+# Website Crawler
+* msfcrawler
+* maltego
+* skipfish
+
 ### Active Recon
 * Nikto
 * nmap (http-enum, etc)
 * Robots.txt
 * dirb
-* Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc)
+* Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc): Wappalyzer
 
 ### Exploitation
-* sploitus.com
+* sploitus.com (based on webservice)
 * Burpsuite
 
 ### Manual Recon
 * ViewDNS.info (website)
 * Pipl (website)
 * Netcraft (website)
-* Maltego (all-in-one) - site Mapping
-* Skipfish - site Mapping
 * Sn1per (all-in-one)
 * Google Analytics ID (Just to find what other sites are using the same ID)
 * WAppalyzer
