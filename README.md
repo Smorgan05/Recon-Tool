@@ -16,15 +16,8 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * Target Website Map (crawler):
 * Wayback Enum:
 
-### File List
-* Recon.sh
-* URLChecker.sh - Checks for valid URLs when given text file with list of URLs (this will get merged into Recon)
-* Recon Logic.vsdx - Planning diagram to keep track of logic
-
-### PreCondition
-* Website (ie google.com) says HTTP/1.1 200 OK
-
 ### Passive Recon
+**Website (ie google.com) says HTTP/1.1 200 OK** - PreCondition
 * Whois
 * NSlookup
 * Wayback Enum
@@ -43,10 +36,6 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * dirb
 * Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc): Wappalyzer
 
-### Exploitation
-* sploitus.com (based on webservice)
-* Burpsuite
-
 ### Manual Recon
 * ViewDNS.info (website)
 * Pipl (website)
@@ -55,6 +44,10 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * Google Analytics ID (Just to find what other sites are using the same ID)
 * WAppalyzer
 * pentest-tools.com (website)
+
+### Exploitation
+* sploitus.com (based on webservice)
+* Burpsuite
 
 ## Change Log
 * Add Arguments such as:
