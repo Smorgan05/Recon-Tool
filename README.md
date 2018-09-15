@@ -6,6 +6,8 @@ Depending on code complexity this project may get ported to python.  At this poi
 
 Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> **Manual**--> **Exploitation**
 
+======
+
 ### Profile:
 * Domain: Example.com
 * IP Address: 192.168.11.1 (NSLookup Info)
@@ -16,6 +18,8 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * Target Website Map (crawler):
 * Wayback Enum:
 
+======
+
 ### Passive Recon
 **Website (ie google.com) says HTTP/1.1 200 OK** - PreCondition
 * Whois
@@ -24,10 +28,14 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * TheHarvester
 * Google Dorking
 
+======
+
 ### Website Crawler
 * msfcrawler
 * maltego
 * skipfish
+
+======
 
 ### Site Mapping
 * Nikto
@@ -35,6 +43,8 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * Robots.txt
 * dirb
 * Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc): Wappalyzer
+
+======
 
 ### Manual Recon
 * ViewDNS.info (website)
@@ -45,9 +55,13 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * WAppalyzer
 * pentest-tools.com (website)
 
+======
+
 ### Exploitation
 * sploitus.com (based on webservice)
 * Burpsuite
+
+======
 
 ## Change Log
 * Add Arguments such as:
