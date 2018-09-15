@@ -1,6 +1,6 @@
 # Recon-Tool - Ash Nazg
 
-Recon-Tool - Basic goal is to create a Penetratoin testing / Recon Framework so that the vulnerability scanning on a target is better and more effiecent.  Also I'm tired of running the same commands over and over again.  And at the same time missing the low hanging fruit.
+Recon-Tool - Basic goal is to create a Penetratoin testing / Recon Framework so that the vulnerability scanning on a target is better and more effiecent.  This will be for single domain querying.  Also I'm tired of running the same commands over and over again.  And at the same time missing the low hanging fruit.
 
 Depending on code complexity this project may get ported to python.  At this point the game plan is to make a list of tools and see what works and go from there.
 
@@ -48,9 +48,3 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 ### Exploitation
 * sploitus.com (based on webservice)
 * Burpsuite
-
-## Change Log
-* Add Arguments such as:
-* Recon.sh -Passive
-* Recon.sh -Active
-* Recon.sh -All
