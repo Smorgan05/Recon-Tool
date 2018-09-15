@@ -2,7 +2,7 @@
 
 Depending on code complexity this project may get ported to python.  At this point the game plan is to make a list of tools and see what works and go from there.
 
-Order of Ops: Passive Recon --> Web Crawler --> Active Recon --> Exploitation
+Order of Ops: **Passive Recon** --> **Web Crawler** --> **Active Recon** --> **Exploitation**
 
 ### Profile:
 * Domain: Example.com
