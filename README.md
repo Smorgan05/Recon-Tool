@@ -36,7 +36,7 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * dirb
 * Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc): Wappalyzer
 
-### Manual Recon
+### Manual Recon (Research)
 * ViewDNS.info (website)
 * Pipl (website)
 * Netcraft (website)
