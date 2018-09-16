@@ -26,7 +26,7 @@ Usage of Recon-Tool / Ash Nazg for attacking targets without prior mutal consent
 * Wayback Enum
 * Google Dorking (Check for App)
 
-### Website Crawler
+### Site Mapping
 * msfcrawler
 * maltego
 * skipfish
