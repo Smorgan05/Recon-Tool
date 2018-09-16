@@ -12,19 +12,19 @@ fi
 # Switch to that Directory
 cd $Path
 
-# Whois Domain lookup
+# Whois Domain lookup (Passive Recon)
 Whois (){
 	FileName=$2"Whois.txt"
 	whois $1 > $FileName
 }
 
-# NSLookup of Domain
+# NSLookup of Domain (Passive Recon)
 NSlookup (){
 	FileName=$2"NSLookup.txt"
 	nslookup $1 > $FileName
 }
 
-# Wayback of Domain
+# Wayback Enumeration (Site Mapping)
 WayBack (){
 
 	# URL Checker Function
@@ -57,7 +57,7 @@ WayBack (){
 	fi
 }
 
-# Harvest the Emails
+# Harvest the Emails (Social Engineering)
 TheHarvester (){
 	FileName=$2"Harvester"
 	theharvester -d $1 -l 500 -b google > $FileName

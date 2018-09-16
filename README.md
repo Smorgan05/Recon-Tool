@@ -1,6 +1,6 @@
 # Recon-Tool - Ash Nazg
 
-Recon-Tool - Basic goal is to create a Penetratoin testing / Recon Framework so that the vulnerability scanning on a target is better and more effiecent.  Also I'm tired of running the same commands over and over again.
+Recon-Tool - Basic goal is to create a Penetratoin testing / Recon Framework so that the vulnerability scanning on a target is better and more effiecent.  This will be for single domain querying.  Also I'm tired of running the same commands over and over again.  And at the same time missing the low hanging fruit.
 
 Depending on code complexity this project may get ported to python.  At this point the game plan is to make a list of tools and see what works and go from there.
 
@@ -20,26 +20,25 @@ Usage of Recon-Tool / Ash Nazg for attacking targets without prior mutal consent
 * Wayback Enum:
 
 ### Passive Recon
-**Website (ie google.com) says HTTP/1.1 200 OK** - PreCondition
+* **Website (ie google.com) says HTTP/1.1 200 OK** - PreCondition
 * Whois
 * NSlookup
 * Wayback Enum
-* TheHarvester
-* Google Dorking
+* Google Dorking (Check for App)
 
 ### Website Crawler
 * msfcrawler
 * maltego
 * skipfish
 
-### Site Mapping
+### Active Recon
 * Nikto
 * nmap (http-enum, etc)
 * Robots.txt
 * dirb
 * Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc): Wappalyzer
 
-### Manual Recon
+### Manual Recon (Research)
 * ViewDNS.info (website)
 * Pipl (website)
 * Netcraft (website)
@@ -51,3 +50,6 @@ Usage of Recon-Tool / Ash Nazg for attacking targets without prior mutal consent
 ### Exploitation
 * sploitus.com (based on webservice)
 * Burpsuite
+
+### Social Engineering
+* TheHarvester
