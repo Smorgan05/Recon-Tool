@@ -24,7 +24,7 @@ Usage of Recon-Tool / Ash Nazg for attacking targets without prior mutal consent
 * Whois
 * NSlookup
 * Wayback Enum
-* Google Dorking (Check for App)
+* Google Dorking: Recon-ng (recon/domains-hosts/google_site_web)
 
 ### Site Mapping
 * msfcrawler
