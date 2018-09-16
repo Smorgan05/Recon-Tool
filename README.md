@@ -24,7 +24,7 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * TheHarvester
 * Google Dorking
 
-### Website Crawler
+### Site Mapping
 * msfcrawler
 * maltego
 * skipfish
