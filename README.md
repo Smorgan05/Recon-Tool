@@ -33,13 +33,12 @@ Usage of Recon-Tool / Ash Nazg for attacking targets without prior mutal consent
 ### Active Recon
 * Nikto
 * nmap (http-enum, etc)
-* Robots.txt (recon-ng discovery/info_disclosure/interesting_files)
-* dirb
-* Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc): Wappalyzer
+* Robots.txt: Recon-ng (discovery/info_disclosure/interesting_files) 443 / HTTPS & 80 / HTTP
+* dirb (brute force)
+* Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc): Wappalyzer / WhatWeb
 
 ### Manual Recon (Research)
 * ViewDNS.info (website)
-* Pipl (website)
 * Netcraft (website)
 * Sn1per (all-in-one)
 * Google Analytics ID (Just to find what other sites are using the same ID)
@@ -52,3 +51,5 @@ Usage of Recon-Tool / Ash Nazg for attacking targets without prior mutal consent
 
 ### Social Engineering
 * TheHarvester
+* Pipl (website)
+* Social Engineering Toolkit (SET)
