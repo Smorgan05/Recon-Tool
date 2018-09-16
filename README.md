@@ -17,7 +17,6 @@ Usage of Recon-Tool / Ash Nazg for attacking targets without prior mutal consent
 * Server Software: IBM WebSphere, Adobe, ASP, etc (nmap -sV hostname?)
 * Port List:
 * Target Website Map (crawler):
-* Wayback Enum:
 
 ### Passive Recon
 * **Website (ie google.com) says HTTP/1.1 200 OK** - PreCondition
