@@ -33,7 +33,7 @@ Usage of Recon-Tool / Ash Nazg for attacking targets without prior mutal consent
 ### Active Recon
 * Nikto
 * nmap (http-enum, etc)
-* Robots.txt
+* Robots.txt (recon-ng discovery/info_disclosure/interesting_files)
 * dirb
 * Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc): Wappalyzer
 
