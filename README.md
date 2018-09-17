@@ -22,8 +22,8 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * **Website (ie google.com) says HTTP/1.1 200 OK** - PreCondition
 * Whois
 * NSlookup
-* Wayback Enum
-* Google Dorking: Recon-ng (recon/domains-hosts/google_site_web)
+* **Wayback Enum** - Needs Work
+* **Google Dorking:** Recon-ng (recon/domains-hosts/google_site_web - Needs Work
 
 ### Site Mapping
 * msfcrawler
