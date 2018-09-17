@@ -12,6 +12,10 @@ fi
 # Switch to that Directory
 cd $Path
 
+# =============================
+# === PASSIVE RECON SECTION ===
+# =============================
+
 # Whois - Domain - (Passive Recon)
 Whois (){
 	FileName=$2"Whois.txt"
@@ -22,6 +26,12 @@ Whois (){
 NSlookup (){
 	FileName=$2"NSLookup.txt"
 	nslookup $1 > $FileName
+}
+
+# Google Dorker - Domain - (Passive Recon)
+GoogleDork (){
+	FileName = $2"GoogleDork.txt"
+	
 }
 
 # Wayback Enumeration - Domain - (Passive Recon)
@@ -57,12 +67,9 @@ WayBack (){
 	fi
 }
 
-# Google Dorker - Domain - (Passive Recon)
-GoogleDork (){
-	FileName = $2"GoogleDork.txt"
-	
-}
-
+# =============================
+# ==== ACTIVE RECON SECTION ===
+# =============================
 
 # SoftwareID - WhatWeb - (Active Recon)
 SoftwareID (){
@@ -70,8 +77,33 @@ SoftwareID (){
 	whatweb -a 3 $1 > $FileName
 }
 
+# Robots Discovery - Nikto - (Active Recon)
+Nikto (){
+	FileName=$2"Nikto.txt"
+	nikto -h $1 > $FileName
+}
 
-# Harvest the Emails (Social Engineering)
+# Robots Discovery Alt - Recon-cli - (Active Recon)
+RobotsAlt(){
+	FileName=$2"RobotsAlt.txt"
+
+}
+
+# ===============================
+# === WEBSITE MAPPING SECTION ===
+# ===============================
+
+# Webcrawler - Skipfish
+Skipfish (){
+
+
+}
+
+# ==================================
+# === SOCIAL ENGINEERING SECTION ===
+# ==================================
+
+# Harvest the Emails - Domain - (Social Engineering)
 TheHarvester (){
 	FileName=$2"Harvester"
 	theharvester -d $1 -l 500 -b google > $FileName
