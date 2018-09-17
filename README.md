@@ -22,19 +22,19 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * **Website (ie google.com) says HTTP/1.1 200 OK** - PreCondition
 * Whois
 * NSlookup
-* **Wayback Enum** - Needs Work
+* **Wayback Enum** - Needs Work - Probably needs its own Terminal
 * **Google Dorking:** Recon-ng (recon/domains-hosts/google_site_web - Needs Work
 
 ### Site Mapping
 * msfcrawler
 * maltego
-* skipfish
+* skipfish - Probably needs its own Terminal
 
 ### Active Recon
-* Nikto
+* Nikto - Probably needs its own Terminal
 * nmap (http-enum, etc)
 * Robots.txt: Recon-ng (discovery/info_disclosure/interesting_files) 443 / HTTPS & 80 / HTTP
-* dirb (brute force)
+* dirb (brute force) - Probably needs its own Terminal
 * Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc): Wappalyzer / WhatWeb
 
 ### Manual Recon (Research)
