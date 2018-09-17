@@ -12,19 +12,19 @@ fi
 # Switch to that Directory
 cd $Path
 
-# Whois Domain lookup (Passive Recon)
+# Whois - Domain - (Passive Recon)
 Whois (){
 	FileName=$2"Whois.txt"
 	whois $1 > $FileName
 }
 
-# NSLookup of Domain (Passive Recon)
+# NSLookup - Domain - (Passive Recon)
 NSlookup (){
 	FileName=$2"NSLookup.txt"
 	nslookup $1 > $FileName
 }
 
-# Wayback Enumeration (Site Mapping)
+# Wayback Enumeration - Domain - (Passive Recon)
 WayBack (){
 
 	# URL Checker Function
@@ -56,6 +56,20 @@ WayBack (){
 		echo "Archive is Empty." #List is Empty
 	fi
 }
+
+# Google Dorker - Domain - (Passive Recon)
+GoogleDork (){
+	FileName = $2"GoogleDork.txt"
+	
+}
+
+
+# SoftwareID - WhatWeb - (Active Recon)
+SoftwareID (){
+	FileName=$2"WhatWeb.txt"
+	whatweb -a 3 $1 > $FileName
+}
+
 
 # Harvest the Emails (Social Engineering)
 TheHarvester (){
