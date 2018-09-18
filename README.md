@@ -1,6 +1,6 @@
-# Recon-Tool - Ash Nazg
+# Ash Nazg - Recon Tool for Kali
 
-Recon-Tool - Basic goal is to create a Penetratoin testing / Recon Framework so that the vulnerability scanning on a target is better and more effiecent.  This will be for single domain querying.  Also I'm tired of running the same commands over and over again.  And at the same time missing the low hanging fruit.
+Ash Nazg - Basic goal is to create a Penetratoin testing / Recon Framework so that the vulnerability scanning on a target is better and more effiecent.  This will be for single domain querying.  Also I'm tired of running the same commands over and over again.  And at the same time missing the low hanging fruit.
 
 Depending on code complexity this project may get ported to python.  At this point the game plan is to make a list of tools and see what works and go from there.
 
@@ -22,19 +22,19 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * **Website (ie google.com) says HTTP/1.1 200 OK** - PreCondition
 * Whois
 * NSlookup
-* **Wayback Enum** - Needs Work
+* **Wayback Enum** - Needs Work - Probably needs its own Terminal
 * **Google Dorking:** Recon-ng (recon/domains-hosts/google_site_web - Needs Work
 
 ### Site Mapping
 * msfcrawler
 * maltego
-* skipfish
+* skipfish - Probably needs its own Terminal
 
 ### Active Recon
-* Nikto
+* Nikto - Probably needs its own Terminal
 * nmap (http-enum, etc)
 * Robots.txt: Recon-ng (discovery/info_disclosure/interesting_files) 443 / HTTPS & 80 / HTTP
-* dirb (brute force)
+* dirb (brute force) - Probably needs its own Terminal
 * Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc): Wappalyzer / WhatWeb
 
 ### Manual Recon (Research)
