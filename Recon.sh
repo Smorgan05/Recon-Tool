@@ -36,6 +36,7 @@ GoogleDork (){
 
 # Wayback Enumeration - Domain - (Passive Recon)
 WayBack (){
+	# Lunach External - gnome-terminal -x bash -c "command"
 
 	# URL Checker Function
 	# This needs to be switched over to a parallel execution
@@ -59,7 +60,7 @@ WayBack (){
 		Store=$(echo "$Filter" | sed 1,3d | head -n -2) #Get the URL List
 		
 		# We could use mulitple servers to make this go faster
-		Return=$(echo "$Store" | parallel -j10 -k URLChecker) # Need to test this (where j is number of parallel URL Checkers)
+		Return=$(echo "$Store" | parallel -j5 -k URLChecker) # Need to test this (where j is number of parallel URL Checkers)
 		Return=$(URLChecker $Store)#Parse List to get Active URLs (needs work)
 		echo "$Return" > $FileName
 	else
@@ -79,6 +80,7 @@ SoftwareID (){
 
 # Robots Discovery - Nikto - (Active Recon)
 Nikto (){
+	# Lunach External - gnome-terminal -x bash -c "command"
 	FileName=$2"Nikto.txt"
 	nikto -h $1 > $FileName
 }
@@ -95,8 +97,9 @@ RobotsAlt(){
 
 # Webcrawler - Skipfish
 Skipfish (){
-
-
+	# Lunach External - gnome-terminal -x bash -c "command"
+	Dir=$2"/Skipfish"
+	skipfish -o $Dir $1
 }
 
 # ==================================
