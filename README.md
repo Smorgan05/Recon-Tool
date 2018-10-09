@@ -9,6 +9,9 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 ### Legal Disclaimer
 **Usage of Recon-Tool / Ash Nazg for attacking targets without prior mutal consent is illegal.  It is the end user's responsibility to obey all applicable local, state, and federal laws. Deveopers assume no liability and are no responsible for any misue or damage caused by this program.**
 
+### Tool Usage:
+./Recon.sh IPAddress CodeName
+
 ### Profile:
 * Domain: Example.com
 * IP Address: 192.168.11.1 (NSLookup Info)
