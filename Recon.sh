@@ -31,16 +31,16 @@ NSlookup (){
 # Google Dorker - Domain - (Passive Recon)
 GoogleDork (){
 	FileName = $2"GoogleDork.txt"
-	
+	#?
 }
 
 # Wayback Enumeration - Domain - (Passive Recon)
 WayBack (){
 	# Lunach External - gnome-terminal -x bash -c "command"
-
+	FileName=$2"WayBack.txt"
+	
 	# URL Checker Function
 	# This needs to be switched over to a parallel execution
-	# How many curls can we execute at once without choking the network?
 	URLChecker (){
 	while read -r LINE; do
 		read -r REP < <(exec curl -IsS "$LINE" 2>&1)
@@ -49,8 +49,7 @@ WayBack (){
 	done <<< "$1"
 	}
 	export -f URLChecker
-
-	FileName=$2"WayBack.txt"
+	
 	printf -v Command 'use auxiliary/scanner/http/enum_wayback; \nset domain '$1'; \nrun; \nexit'
 	Result=$(msfconsole -x "$Command")
 	Filter=$(echo "$Result" | sed -n -e '/domain/,$p') # Cut everything after "domain"
@@ -60,8 +59,8 @@ WayBack (){
 		Store=$(echo "$Filter" | sed 1,3d | head -n -2) #Get the URL List
 		
 		# We could use mulitple servers to make this go faster
-		Return=$(echo "$Store" | parallel -j5 -k URLChecker) # Need to test this (where j is number of parallel URL Checkers)
-		Return=$(URLChecker $Store)#Parse List to get Active URLs (needs work)
+		Return=$(echo "$Store" | parallel -j8 -k URLChecker) # Need to test this (where j is number of parallel URL Checkers)
+		#Return=$(URLChecker $Store)#Parse List to get Active URLs (needs work)
 		echo "$Return" > $FileName
 	else
 		echo "Archive is Empty." #List is Empty
@@ -117,11 +116,13 @@ URLTest () {
 	result=$(curl -Is $1 | head -n 1)
 	if [ "$result"=="HTTP/1.1 200 OK" ];
 	then
-		echo "Website is working"
+		echo "Test Passive Recon"
 		Whois $1 $2
 		NSlookup $1 $2
-		WayBack $1 $2
-		TheHarvester $1 $2
+		GoogleDork $1 $2
+		Wayback $1 $2
+		#WayBack $1 $2
+		#TheHarvester $1 $2
 	else
 		echo "Website is dead"
 	fi
