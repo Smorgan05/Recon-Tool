@@ -31,7 +31,7 @@ NSlookup (){
 # Google Dorker - Domain - (Passive Recon)
 GoogleDork (){
 	FileName = $2"GoogleDork.txt"
-	#?
+	atscan --dork "cnn.com" --level 10 -m 2 > $FileName
 }
 
 # Wayback Enumeration - Domain - (Passive Recon)
@@ -119,9 +119,8 @@ URLTest () {
 		echo "Test Passive Recon"
 		Whois $1 $2
 		NSlookup $1 $2
-		GoogleDork $1 $2
-		Wayback $1 $2
-		#WayBack $1 $2
+		#GoogleDork $1 $2
+		#Wayback $1 $2
 		#TheHarvester $1 $2
 	else
 		echo "Website is dead"
