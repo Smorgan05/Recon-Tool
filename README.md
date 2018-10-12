@@ -10,7 +10,7 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 **Usage of Recon-Tool / Ash Nazg for attacking targets without prior mutal consent is illegal.  It is the end user's responsibility to obey all applicable local, state, and federal laws. Deveopers assume no liability and are no responsible for any misue or damage caused by this program.**
 
 ### Tool Usage:
-./Recon.sh IPAddress CodeName
+./Recon.sh Domain CodeName
 
 ### Profile:
 * Domain: Example.com
@@ -26,19 +26,18 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * Whois
 * NSlookup
 * **Wayback Enum** - Needs Work - Probably needs its own Terminal
-* **Google Dorking:** Recon-ng (recon/domains-hosts/google_site_web - Needs Work
+* **Google Dorking:** - atscan - Probably needs its own terminal
 
 ### Site Mapping
-* msfcrawler
+* msfcrawler (need to add this)
 * maltego
 * skipfish - Probably needs its own Terminal
 
 ### Active Recon
 * Nikto - Probably needs its own Terminal
 * nmap (http-enum, etc)
-* Robots.txt: Recon-ng (discovery/info_disclosure/interesting_files) 443 / HTTPS & 80 / HTTP
 * dirb (brute force) - Probably needs its own Terminal
-* Need a way to identify the Web Server Software (ie Adobe, iis, oracle, etc): Wappalyzer / WhatWeb
+* WhatWeb - ID software
 
 ### Manual Recon (Research)
 * ViewDNS.info (website)
