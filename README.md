@@ -17,7 +17,7 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * IP Address: 192.168.11.1 (NSLookup Info)
 * Operating System: Windows / Linux
 * Server Host Software: IIS / Apache / Tomcat
-* Server Software: IBM WebSphere, Adobe, ASP, etc (nmap -sV hostname?)
+* Server Software: IBM WebSphere, Adobe, ASP, WordPress, etc (nmap -sV hostname?)
 * Port List:
 * Target Website Map (crawler):
 
@@ -38,6 +38,7 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * nmap (http-enum, etc)
 * dirb (brute force) - Probably needs its own Terminal
 * WhatWeb - ID software
+* wpscan - Scans for Wordpress vulnerabilities
 
 ### Manual Recon (Research)
 * ViewDNS.info (website)
