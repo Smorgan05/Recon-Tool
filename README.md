@@ -7,7 +7,7 @@ Depending on code complexity this project may get ported to python.  At this poi
 Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> **Manual**--> **Exploitation**
 
 ### Legal Disclaimer
-**Usage of Recon-Tool / Ash Nazg for attacking targets without prior mutal consent is illegal.  It is the end user's responsibility to obey all applicable local, state, and federal laws. Deveopers assume no liability and are no responsible for any misue or damage caused by this program.**
+**Usage of Recon-Tool / Ash Nazg for attacking targets without prior mutal consent is illegal.  It is the end user's responsibility to obey all applicable local, state, and federal laws. Deveopers assume no liability and are not responsible for any misue or damage caused by this program.**
 
 ### Tool Usage:
 ./Recon.sh Domain CodeName
