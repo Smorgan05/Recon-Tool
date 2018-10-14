@@ -38,6 +38,8 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * nmap (http-enum, etc)
 * dirb (brute force) - Probably needs its own Terminal
 * WhatWeb - ID software
+
+#### Software Specific
 * wpscan - Scans for Wordpress vulnerabilities
 
 ### Manual Recon (Research)
