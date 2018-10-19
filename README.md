@@ -21,8 +21,10 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * Port List:
 * Target Website Map (crawler):
 
+### Site Check
+* Curl Check - HTTP/1.1 200 OK?
+
 ### Passive Recon
-* **Website (ie google.com) says HTTP/1.1 200 OK** - PreCondition
 * Whois
 * NSlookup
 * **Wayback Enum** - Needs Work - Probably needs its own Terminal
