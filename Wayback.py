@@ -14,8 +14,7 @@ def Wayback_Enum(website, codeName):
 		import urllib.request
 
 		# Get Status code (Hopefully 200)
-		status = urllib.request.urlopen("http://www.stackoverflow.com").getcode()
-
+		status = urllib.request.urlopen(website).getcode()
 		return status
 
 	# Writing to File
@@ -23,6 +22,10 @@ def Wayback_Enum(website, codeName):
 	#f.write()
 	#f.close()
 
+	# Execute Wayback Enum
+	Command = "use auxiliary/scanner/http/enum_wayback; \nset domain " + website + "; \nrun; \nexit"
+	import subprocess
+	subprocess.run(["msfconsole", "-x", Command], capture_output=True)
 	
 
 
