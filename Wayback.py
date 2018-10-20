@@ -22,10 +22,14 @@ def Wayback_Enum(website, codeName):
 	#f.write()
 	#f.close()
 
-	# Execute Wayback Enum
-	Command = "use auxiliary/scanner/http/enum_wayback; \nset domain " + website + "; \nrun; \nexit"
+	# Execute Wayback Enum (should work)
 	import subprocess
-	subprocess.run(["msfconsole", "-x", Command], capture_output=True)
+	Command = '"use auxiliary/scanner/http/enum_wayback; \nset domain ' + website + '; \nrun; \nexit"'
+	result = subprocess.Popen(['msfconsole', '-x', Command], stdout=subprocess.PIPE)
+	out, err = process.communicate()
+	
+	# Filter the Result
+	
 	
 
 
