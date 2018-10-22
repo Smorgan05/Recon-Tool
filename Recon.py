@@ -49,6 +49,19 @@ def main():
 	import os
 	if not os.path.exists(path):
 		os.makedirs(path)
+	
+	# Get URL Library
+	import urllib.request
+	status = urllib.request.urlopen(website).getcode()
+	
+	# Test Site
+	if status == 200:
+		# Function Calls here
+		
+		
+	else:
+		print('Website is not Online!')
+	
 
 # Call Main
  if __name__ == '__main__':
