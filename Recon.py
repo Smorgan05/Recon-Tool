@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #!/usr/bin/python3
 
 # Escape Character Cleaning Function
@@ -31,9 +30,6 @@ def String_Clean(multi_string):
 # Add the necessary libs
 import argparse
 
-# Add the necessary libs
-import argparse
-
 # Construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
 ap.add_argument("website", action="store", type=str, help="website domain goes here")
@@ -57,6 +53,3 @@ def main():
 # Call Main
  if __name__ == '__main__':
     main()
-=======
-#!/usr/bin/python3
->>>>>>> parent of 4bafc6e... Recon - Python
