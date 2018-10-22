@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #!/usr/bin/python3
 
 # Escape Character Cleaning Function
@@ -56,3 +57,6 @@ def main():
 # Call Main
  if __name__ == '__main__':
     main()
+=======
+#!/usr/bin/python3
+>>>>>>> parent of 4bafc6e... Recon - Python
