@@ -30,11 +30,17 @@ def String_Clean(multi_string):
 # Add the necessary libs
 import argparse
 
+# Add the necessary libs
+import argparse
+
 # Construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
-ap.add_argument('website', action="store", type=string, required=True)
-ap.add_argument('codeName', action="store", type=string, required=True)
-args = parser.parse_args()
+ap.add_argument("website", action="store", type=str, help="website domain goes here")
+ap.add_argument("codeName", action="store", type=str, help="codeName goes here")
+args = ap.parse_args()
+
+website = args.website
+codeName = args.codeName
 
 # Declare Vars
 path = 'root/Desktop/' + codeName
