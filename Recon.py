@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+# Add the necessary libs
+import argparse
+from subprocess import check_output
 
 # Escape Character Cleaning Function
 def String_Clean(multi_string):
@@ -11,9 +14,40 @@ def String_Clean(multi_string):
 # === PASSIVE RECON SECTION ===
 # =============================
 
+# Whois - Domain
+def WhoIs(site, code):
+	FileName = code + "_WhoIs.txt"
+	out = check_output(["whois", site])
+	result = String_Clean(out)
+	return
+
+# NSLookup - Domain
+def NSLookup(site, code):
+	FileName = code + "_NSLookup"
+	out = check_output(["nslookup", site])
+	result = String_Clean(out)
+	return
+
+# GoogleDork - Domain
+def GoogleDork(site, code):
+	FileName = code + "_GoogleDork.txt
+	out = check_output(["atscan","--dork", site, "--level 10", "-m 2"])
+	result = String_Clean(out)
+	return
+	
+# Wayback Enumeration - Domain
+# Soon
+	
 # =============================
 # ==== ACTIVE RECON SECTION ===
 # =============================
+
+# SoftwareID - WhatWeb
+def SoftwareID(site, code):
+	FileName = code + "_WhatWeb.txt"
+	out = check_output(["whatweb", "-a 3", "www.wired.com"])
+	result = String_Clean(out)
+	return
 
 # ===============================
 # === WEBSITE MAPPING SECTION ===
@@ -26,9 +60,6 @@ def String_Clean(multi_string):
 # ==================================
 # ===== MAIN FUNCTION SECTION ======
 # ==================================
-
-# Add the necessary libs
-import argparse
 
 # Construct the argument parse and parse the arguments
 ap = argparse.ArgumentParser()
@@ -56,8 +87,14 @@ def main():
 	
 	# Test Site
 	if status == 200:
-		# Function Calls here
+	
+		# Passive Recon
+		WhoIs(website, codeName)
+		#NSLookup(website, codeName)
+		#GoogleDork(website, codeName)
 		
+		# Active Recon
+		whatweb(website, codeName)
 		
 	else:
 		print('Website is not Online!')
