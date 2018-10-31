@@ -25,8 +25,8 @@ Order of Ops: **Passive Recon** --> **Site Mapping** --> **Active Recon**  --> *
 * Curl Check - HTTP/1.1 200 OK?
 
 ### Passive Recon
-* Whois
-* NSlookup
+* Whois - wired.com
+* NSlookup - www.wired.com
 * **Wayback Enum** - Needs Work - Probably needs its own Terminal
 * **Google Dorking:** - atscan - Probably needs its own terminal
 
